@@ -31,7 +31,8 @@ const BackgroundScene = new THREE.Scene();
 let BackgroundMesh;
 {
     const ThreeLoader = new THREE.TextureLoader();
-    const BackgroundTexture = ThreeLoader.load( '/Images/Equi-space.png' );
+    // const BackgroundTexture = ThreeLoader.load( '/Images/Equi-space.png' );
+    const BackgroundTexture = ThreeLoader.load( 'https://i.imgur.com/u8LzIYB.jpeg' );
     
     BackgroundTexture.magFilter = THREE.LinearFilter;
     BackgroundTexture.minFilter = THREE.LinearFilter;
