@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Vite App</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"> 
+  </head>
+  
+  <body>
+    <script type="module" src="/main.js"></script>
+    
+    <canvas id="Background" class="BG-Class"></canvas>
+
+    <div class="SliderContainer">
+        <button class="LightToggleButton" id="ToggleButton">Point Light</button>
+        <p>LightX</p> 
+        <input type="range" min="-200" max="200" value="0" class="Slider" id="PLightX" step="0.1">
+        <p>LightY</p>
+        <input type="range" min="-200" max="200" value="0" class="Slider" id="PLightY" step="0.1">
+        <p>LightZ</p>
+        <input type="range" min="-200" max="200" value="35" class="Slider" id="PLightZ" step="0.1">
+        <p>Luminance</p>
+        <input type="range" min="0.00" max="10" value="1.00" class="Slider" id="LightStrength" step="0.1">
+    </div>
+
+    <div class="LowerControls" id="LowerControlDiv">
+      <button class="AutoRotateButton" id="RotateButton">Auto-rotate</button>
+      <button class="AutoRotateSceneButton" id="RotateSceneButton">Auto-rotate scene</button>
+
+      <p>Color:&nbsp;</p>
+      <input class='ColorInputButton' type="color" value="#ff0000" id="ColourPicker">
+
+      <p>Stars:</p>
+      <input type="number" min="0" step="1" value="200" placeholder="# of stars to render" id="StarsInputBox">
+      <button id="RenderStarsButton" class="RenderStars">Render</button>
+
+      <p>Grid?</p>
+      <input type="checkbox" name="" id="ShowGridCheckBox">
+
+      <button>CLEAR</button>
+    </div>
+
+    
+    <div class="PerfMonitors" id="Monitors">
+      TEST
+    </div>
+    
+
+  
+  </body>
+
+</html>

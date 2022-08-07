@@ -1,0 +1,82 @@
+html {
+  overflow-x: hidden;
+}
+
+.BG_Class {
+  z-index: 0;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.SliderContainer {
+  display: flex;
+  align-items: center;
+
+  z-index: 1;
+  display: flex;
+  width: 100%;
+
+  border: 5px solid red;
+}
+
+.Slider {
+  z-index: 2;
+  width: 100%;
+}
+
+p {
+  color: white;
+  z-index: 1;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.AutoRotateButton {
+  z-index: 1;
+  margin: 1rem;
+  margin-right: 0rem;
+}
+
+.AutoRotateSceneButton {
+  z-index: 1;
+  margin-left: 0.1rem;
+  margin-right: 1rem;
+}
+
+.LowerControls {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.ColorInputButton {
+  z-index: 1;
+  padding: 0;
+  color: transparent;
+  margin-right: 1rem;
+}
+
+.LightToggleButton {
+  z-index: 1;
+  margin-right: 5px;
+}
+
+.PerfMonitors {
+  z-index: 1;
+  position: absolute;
+  bottom: 30px;
+  right: 43px;
+}
+
+.RenderStars {
+  margin-right: 1rem;
+}
