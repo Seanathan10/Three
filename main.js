@@ -56,6 +56,10 @@ var RenderButton = document.getElementById( "RenderStarsButton" );
 export var StarCount = 0;
 export var TotalStars = 0;
 
+export function ResetTotalStars() {
+  TotalStars = 0;
+}
+
 RenderButton.addEventListener( "click", () => {
   StarCount = parseInt( document.getElementById( "StarsInputBox" ).value );
   Array( StarCount ).fill().forEach( AddStars );

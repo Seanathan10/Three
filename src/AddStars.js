@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { MainScene } from "../main";
 import { TotalStars } from '../main';
 import { StarCount } from '../main';
+import { ResetTotalStars } from '../main';
 
 
 var AddingStars = true;
@@ -40,6 +41,7 @@ ClearButton.addEventListener( "click", () => {
         }
     }
     
-    TotalStars = 0;
+    // TotalStars = 0;
+    ResetTotalStars();
     
 } )
