@@ -53,13 +53,14 @@ PCamera.position.setZ( 30 );
 
 var RenderButton = document.getElementById( "RenderStarsButton" );
 
+export var StarCount = 0;
+export var TotalStars = 0;
+
 RenderButton.addEventListener( "click", () => {
-  var StarCount = parseInt( document.getElementById( "StarsInputBox" ).value );
+  StarCount = parseInt( document.getElementById( "StarsInputBox" ).value );
   Array( StarCount ).fill().forEach( AddStars );
+  TotalStars += StarCount;
 } )
-
-
-// Array( 200 ).fill().forEach( AddStars );
 
 
 const GridCheck = document.getElementById( 'ShowGridCheckBox' );

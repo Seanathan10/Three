@@ -93,6 +93,8 @@ export function Animator() {
     MBCounter.end();
 
 
+    SceneRenderer.renderLists.dispose();
+
     
 
     ListenToColorPicker();
