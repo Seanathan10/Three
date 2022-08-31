@@ -77,6 +77,10 @@ p {
   right: 43px;
 }
 
-.RenderStars {
+.ClearButtonCSS {
+  margin-right: 1rem;
+}
+
+.CheckBoxClass {
   margin-right: 1rem;
 }

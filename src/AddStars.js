@@ -40,8 +40,7 @@ ClearButton.addEventListener( "click", () => {
             // break;
         }
     }
-    
-    // TotalStars = 0;
+
     ResetTotalStars();
     
 } )
